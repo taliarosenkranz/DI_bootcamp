@@ -13,13 +13,14 @@ INSERT INTO students (first_name, last_name, birth_date) VALUES
 ('David', 'Grez', '2003-06-14'),
 ('Omer', 'Simpson', '1980-03-10');
 
-
 --Fetch all of the data from the table.
 select * from students;
 -- Fetch all of the students first_names and last_names.
 select first_name, last_name from students;
 -- For the following questions, only fetch the first_names and last_names of the students.
 -- Fetch the student which id is equal to 2.
+select first_name, last_name from students
+where id = 2;
 -- Fetch the student whose last_name is Benichou AND first_name is Marc.
 select first_name, last_name from students
 where last_name = 'Benichou' AND first_name = 'Marc';
